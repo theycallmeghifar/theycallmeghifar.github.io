@@ -49,3 +49,32 @@ function validateField(fieldName) {
     validateField(fieldName);
   });
 });
+
+//function spinner
+onload = function () {
+  const spinner = document.querySelector(".spinner-center");
+  const app = document.getElementById("app");
+
+  app.style.display = "none";
+  setTimeout(() => {
+    spinner.style.display = "none";
+    app.style.display = "block";
+  }, 5000);
+};
+
+//function effects
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll(".observe-animation")[0].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[1].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[2].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[3].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[4].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[5].classList.add("fade-up");
+    }
+  });
+});
+
+observer.observe(document.getElementById("about-container"));
+observer.observe(document.getElementById("projects-container"));
