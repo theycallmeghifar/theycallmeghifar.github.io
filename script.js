@@ -52,14 +52,15 @@ function validateField(fieldName) {
 
 // loading section
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".spinner-center").style.display = "block";
   document.getElementById("app").style.display = "none";
 });
 
 // after loading section
 window.addEventListener("load", function () {
-  document.querySelector(".spinner-center").style.display = "none";
-  document.getElementById("app").style.display = "block";
+  setTimeout(() => {
+    document.querySelector(".spinner-center").style.display = "none";
+    document.getElementById("app").style.display = "block";
+  }, 3000);
 });
 
 //function effects
