@@ -50,16 +50,16 @@ function validateField(fieldName) {
   });
 });
 
-//function spinner
-window.addEventListener("load", function () {
-  const spinner = document.querySelector(".spinner-center");
-  const app = document.getElementById("app");
+// loading section
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".spinner-center").style.display = "block";
+  document.getElementById("app").style.display = "none";
+});
 
-  app.style.display = "none";
-  setTimeout(() => {
-    spinner.style.display = "none";
-    app.style.display = "block";
-  }, 5000);
+// after loading section
+window.addEventListener("load", function () {
+  document.querySelector(".spinner-center").style.display = "none";
+  document.getElementById("app").style.display = "block";
 });
 
 //function effects
