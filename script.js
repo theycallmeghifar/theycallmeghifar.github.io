@@ -51,7 +51,7 @@ function validateField(fieldName) {
 });
 
 //function spinner
-onload = function () {
+window.addEventListener("load", function () {
   const spinner = document.querySelector(".spinner-center");
   const app = document.getElementById("app");
 
@@ -60,7 +60,7 @@ onload = function () {
     spinner.style.display = "none";
     app.style.display = "block";
   }, 5000);
-};
+});
 
 //function effects
 const observer = new IntersectionObserver((entries) => {
