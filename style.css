@@ -11,13 +11,43 @@ nav {
   padding-top: 5rem;
 }
 
+#skills {
+  background-color: #eceef5;
+}
+
+.skills-tooltip {
+  position: relative; /* Menjadikan posisi relatif untuk menempatkan tooltip */
+}
+
+.skills-tooltip .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.skills-tooltip:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+
 #projects {
   padding-top: 5rem;
-  background-color: #eceef5;
 }
 
 #contact {
   padding-top: 5rem;
+  background-color: #eceef5;
+  padding-bottom: 3rem;
 }
 
 footer {
