@@ -12,6 +12,7 @@ nav {
 }
 
 #skills {
+  padding-top: 5rem;
   background-color: #eceef5;
 }
 
@@ -34,6 +35,10 @@ nav {
   transition: all 0.3s ease;
 }
 
+.skills-tooltip:hover {
+  transform: scale(1.1);
+}
+
 .skills-tooltip:hover .tooltip {
   opacity: 1;
   visibility: visible;
@@ -42,6 +47,11 @@ nav {
 
 #projects {
   padding-top: 5rem;
+}
+
+#projects .card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
 
 #contact {

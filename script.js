@@ -57,10 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // after loading section
 window.addEventListener("load", function () {
-  setTimeout(() => {
-    document.querySelector(".spinner-center").style.display = "none";
-    document.getElementById("app").style.display = "block";
-  }, 3000);
+  document.querySelector(".spinner-center").style.display = "none";
+  document.getElementById("app").style.display = "block";
 });
 
 //function effects
