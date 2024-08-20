@@ -71,6 +71,18 @@ const observer = new IntersectionObserver((entries) => {
       document.querySelectorAll(".observe-animation")[3].classList.add("fade-up");
       document.querySelectorAll(".observe-animation")[4].classList.add("fade-up");
       document.querySelectorAll(".observe-animation")[5].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[6].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[7].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[8].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[9].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[10].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[11].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[12].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[13].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[14].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[15].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[16].classList.add("fade-up");
+      document.querySelectorAll(".observe-animation")[17].classList.add("fade-up");
     }
   });
 });
